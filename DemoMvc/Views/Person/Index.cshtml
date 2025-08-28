@@ -1,0 +1,15 @@
+@model DemoMvc.Models.Person
+
+<h2>Nhập thông tin</h2>
+
+<form asp-action="Result" method="post">
+    <label>Họ tên:</label>
+    <input type="text" name="Name" required />
+    <br /><br />
+
+    <label>Năm sinh:</label>
+    <input type="number" name="BirthYear" required />
+    <br /><br />
+
+    <button type="submit">Xem kết quả</button>
+</form>

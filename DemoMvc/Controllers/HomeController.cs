@@ -4,11 +4,11 @@ using DemoMvc.Models;
 
 namespace DemoMvc.Controllers;
 
-public class HomeController : Controller
+public class DemoMvcController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly ILogger<PersonController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public DemoMvcController(ILogger<PersonController> logger)
     {
         _logger = logger;
     }

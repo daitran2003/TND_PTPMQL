@@ -1,0 +1,24 @@
+@model DemoMvc.Models.TinhToan
+
+<h2>Máy tính đơn giản</h2>
+
+<form asp-action="Result" method="post">
+    <label>Số thứ nhất:</label>
+    <input type="number" step="any" name="Number1" required />
+    <br /><br />
+
+    <label>Số thứ hai:</label>
+    <input type="number" step="any" name="Number2" required />
+    <br /><br />
+
+    <label>Chọn phép toán:</label>
+    <select name="Operation">
+        <option value="sum">Tổng </option>
+        <option value="sub">Hiệu </option>
+        <option value="mul">Tích </option>
+        <option value="div">Thương </option>
+    </select>
+    <br /><br />
+
+    <button type="submit">Tính</button>
+</form>
