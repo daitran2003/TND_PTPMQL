@@ -5,7 +5,7 @@ namespace DemoMvc.Controllers
 {
     public class TinhToanController : Controller
     {
-        public IActionResult Input()
+        public IActionResult Index()
         {
             return View();
         }

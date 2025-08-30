@@ -1,0 +1,14 @@
+@model DemoMvc.Models.BMI
+
+<h1>Tính chỉ số BMI</h1>
+<form action="Result" method="post">
+<div>
+    <label>Chiều cao(m):</label>
+    <input asp-for="Height" type="number" step="0.01"/>
+</div>
+<div>
+    <label>Cân nặng(kg):</label>
+    <input asp-for="Weight" type="number" step="0.01"/>
+</div>
+<button type="submit">Tính kết quả </button>
+</form>
